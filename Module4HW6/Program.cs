@@ -21,7 +21,12 @@ namespace Module4HW6
                     await goTransaction.Start(() => new AddInitRows(context).FillGenres());
                 }
 
-                var sample1 = new TaskQuary(context);
+                var taskQuary = new TaskQuary(context);
+
+                // await taskQuary.Task1a();
+                // await taskQuary.Task1a();
+                // await taskQuary.Task2();
+                await taskQuary.Task3();
             }
         }
     }
